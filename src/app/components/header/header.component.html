@@ -1,0 +1,16 @@
+<div>
+    <div *ngIf = "!checkLocalStorage()">
+        <button (click) = "register()">Register</button>
+        <br/>
+        <button (click) = "login()">Login</button>
+    </div>
+
+    <div *ngIf = "checkLocalStorage()">
+        <button (click) = "logout()">Log Out</button>
+    </div>
+</div>
+
+<hr/>
+<div>
+    <app-footer></app-footer>
+</div>
